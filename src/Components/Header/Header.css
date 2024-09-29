@@ -26,3 +26,15 @@ header {
             background-color: rgb(0, 0, 0);
         }
 }
+
+@media (max-width:480px) {
+    header {
+        ul {
+            gap: 5px;
+            li {
+                font-size: 10px;
+                padding: 5px 5px;
+            }
+        }
+    }
+}

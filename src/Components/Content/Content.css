@@ -21,7 +21,7 @@
         padding-right: 30px;
         align-self: center;
         img {
-        width: 300px;
+        width: 100%;
         border-radius: 5px;
         }
     }
@@ -98,12 +98,16 @@
             width: 95%;
             flex-direction: column;
             text-align: center;
-            padding-bottom: 30px;
+            padding: 10px;
+            padding-bottom: 10px;
             p {
             padding-bottom: 20px;
             }
             ul {
             justify-content: center;
+            }
+            .right {
+                padding: 10px;
             }
         }
     .extra {

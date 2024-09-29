@@ -1,13 +1,10 @@
 #root {
-  /* width: 100%; */
   margin: 0 auto;
   padding: 2rem;
   padding-top: 0;
-  /* padding-bottom: 50px; */
   box-sizing: border-box;
   text-align: center;
   overflow: hidden;
-  /* height: 100vh ; */
 }
 
 .buttons {
@@ -91,7 +88,6 @@
     padding-top: 0;
     box-sizing: border-box;
     text-align: center;
-    /* height: calc(100vh + 50px); */
   }
   .buttons {
     text-align: center;
@@ -114,6 +110,12 @@
         display: inline-block;
         margin: 15px;
       }
+      p {
+        font-size: 19px;
+      }
+    }
+    .lefts {
+      padding: 10px;
     }
   }
 
