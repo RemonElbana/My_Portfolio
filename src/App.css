@@ -3,10 +3,11 @@
   margin: 0 auto;
   padding: 2rem;
   padding-top: 0;
-  padding-bottom: 50px;
+  /* padding-bottom: 50px; */
   box-sizing: border-box;
   text-align: center;
-  height: calc(100vh );
+  overflow: hidden;
+  /* height: 100vh ; */
 }
 
 .buttons {
@@ -44,6 +45,7 @@
   overflow-x: hidden;
   box-sizing: border-box;
   margin-top: 0px;
+  margin-bottom: 150px;
   text-align: left;
   width: 75%;
   padding: 20px;
@@ -65,7 +67,7 @@
     padding-right: 30px;
     align-self: center;
     img {
-    width: 500px;
+    width:100%;
     border-radius: 5px;
   }
   }
@@ -89,7 +91,7 @@
     padding-top: 0;
     box-sizing: border-box;
     text-align: center;
-    height: calc(100vh + 50px);
+    /* height: calc(100vh + 50px); */
   }
   .buttons {
     text-align: center;
