@@ -18,7 +18,7 @@ function App() {
     <div>
       <Header />
       <Content />
-      <div className="buttons">
+      {/* <div className="buttons">
         <ProjectBtn
           onSelect={() => selectHandler("dashboard")}
           isSelected={projectSel === "dashboard"}
@@ -43,7 +43,7 @@ function App() {
         >
           Age Calculator
         </ProjectBtn>
-      </div>
+      </div> */}
       {/* {projectSel ?       <section className="projects">
         <div className="lefts">
           <img src={PROJECTS[projectSel].image} alt="" />
