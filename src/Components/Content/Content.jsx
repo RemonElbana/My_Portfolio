@@ -3,6 +3,8 @@ import myImg from "../../assets/avatar.jpg";
 
 export default function content() {
     return (
+        <div id="homeSection">
+        <h1 id="" >Home</h1>
         <article>
         <div className="left">
             <img src={myImg} alt="" />
@@ -43,5 +45,6 @@ export default function content() {
             </div>
         </div>
         </article>
+        </div>
     );
 }

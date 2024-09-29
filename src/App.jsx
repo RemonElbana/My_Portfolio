@@ -1,4 +1,5 @@
 import "./App.css";
+// import React from "react";
 import { PROJECTS } from "./Projects.js";
 import { useState } from "react";
 import Header from "./Components/Header/Header.jsx";
@@ -6,7 +7,7 @@ import Content from "./Components/Content/Content.jsx";
 import ProjectBtn from "./Components/Projects/ProjectsBtn.jsx";
 
 function App() {
-  const [projectSel, setProjectSel] = useState();
+  const [projectSel, setProjectSel] = useState("dashboard");
 
   function selectHandler(selected) {
     setProjectSel(selected);
@@ -15,9 +16,10 @@ function App() {
   const iscontent = "Please Select a Project"
 
   return (
-    <div>
+    <>
       <Header />
       <Content />
+      <h1 id="projectSection" className="ProjectsHeader" >Projects</h1>
       <div className="buttons">
         <ProjectBtn
           onSelect={() => selectHandler("dashboard")}
@@ -61,7 +63,7 @@ function App() {
       </section>
     : <section className="projects"> {iscontent} </section>
 }
-    </div>
+    </>
   );
 }
 

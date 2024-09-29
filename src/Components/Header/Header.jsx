@@ -9,8 +9,8 @@ export default function header() {
             </div>
             <div className="listitem">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About Us</a></li>
+                    <li><a href="#homeSection">Home</a></li>
+                    <li><a href="#projectSection">Projects</a></li>
                     <li><a href="#">Contact</a></li>
                     <li><a href="#">Services</a></li>
                 </ul>
