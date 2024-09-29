@@ -9,6 +9,7 @@ import "./App.css";
 function App() {
   // const [projectSel, setProjectSel] = useState();
   // const [projectSel, setProjectSel] = useState();
+  // const [projectSel, setProjectSel] = useState();
 
   // function selectHandler(selected) {
   //   setProjectSel(selected);
@@ -16,7 +17,11 @@ function App() {
   // function selectHandler(selected) {
   //   setProjectSel(selected);
   // }
+  // function selectHandler(selected) {
+  //   setProjectSel(selected);
+  // }
 
+  // const iscontent = "Please Select a Project"
   // const iscontent = "Please Select a Project"
   // const iscontent = "Please Select a Project"
 
