@@ -1,4 +1,3 @@
-import { SpeedInsights } from "@vercel/speed-insights/next"
 import "./App.css";
 import { PROJECTS } from "./Projects.js";
 import { useState } from "react";
@@ -62,7 +61,6 @@ function App() {
       </section>
     : <section className="projects"> {iscontent} </section>
 }
-    <SpeedInsights/>
     </div>
   );
 }
