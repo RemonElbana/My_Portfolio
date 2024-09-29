@@ -1,35 +1,24 @@
 import "./App.css";
-// import { PROJECTS } from "./Projects.js";
-// import { useState } from "react";
-// import Header from "./Components/Header/Header.jsx";
-// import Content from "./Components/Content/Content.jsx";
-// import ProjectBtn from "./Components/Projects/ProjectsBtn.jsx";
-// import ProjectBtn from "./Components/Projects/ProjectsBtn.jsx";
+import { PROJECTS } from "./Projects.js";
+import { useState } from "react";
+import Header from "./Components/Header/Header.jsx";
+import Content from "./Components/Content/Content.jsx";
+import ProjectBtn from "./Components/Projects/ProjectsBtn.jsx";
 
 function App() {
-  // const [projectSel, setProjectSel] = useState();
-  // const [projectSel, setProjectSel] = useState();
-  // const [projectSel, setProjectSel] = useState();
+  const [projectSel, setProjectSel] = useState();
 
-  // function selectHandler(selected) {
-  //   setProjectSel(selected);
-  // }
-  // function selectHandler(selected) {
-  //   setProjectSel(selected);
-  // }
-  // function selectHandler(selected) {
-  //   setProjectSel(selected);
-  // }
+  function selectHandler(selected) {
+    setProjectSel(selected);
+  }
 
-  // const iscontent = "Please Select a Project"
-  // const iscontent = "Please Select a Project"
-  // const iscontent = "Please Select a Project"
+  const iscontent = "Please Select a Project"
 
   return (
     <div>
-      {/* <Header /> */}
-      {/* <Content /> */}
-      {/* <div className="buttons">
+      <Header />
+      <Content />
+      <div className="buttons">
         <ProjectBtn
           onSelect={() => selectHandler("dashboard")}
           isSelected={projectSel === "dashboard"}
@@ -54,8 +43,8 @@ function App() {
         >
           Age Calculator
         </ProjectBtn>
-      </div> */}
-      {/* {projectSel ?       <section className="projects">
+      </div>
+      {projectSel ?       <section className="projects">
         <div className="lefts">
           <img src={PROJECTS[projectSel].image} alt="" />
         </div>
@@ -71,7 +60,7 @@ function App() {
         </div>
       </section>
     : <section className="projects"> {iscontent} </section>
-} */}
+}
     </div>
   );
 }
