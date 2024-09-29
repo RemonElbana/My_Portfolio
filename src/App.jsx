@@ -4,14 +4,20 @@ import "./App.css";
 // import Header from "./Components/Header/Header.jsx";
 import Content from "./Components/Content/Content.jsx";
 // import ProjectBtn from "./Components/Projects/ProjectsBtn.jsx";
+// import ProjectBtn from "./Components/Projects/ProjectsBtn.jsx";
 
 function App() {
+  // const [projectSel, setProjectSel] = useState();
   // const [projectSel, setProjectSel] = useState();
 
   // function selectHandler(selected) {
   //   setProjectSel(selected);
   // }
+  // function selectHandler(selected) {
+  //   setProjectSel(selected);
+  // }
 
+  // const iscontent = "Please Select a Project"
   // const iscontent = "Please Select a Project"
 
   return (
