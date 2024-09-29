@@ -105,6 +105,10 @@
             }
             ul {
             justify-content: center;
+            gap: 9px !important;
+            li {
+                font-size: 15px;
+            }
             }
             .right {
                 padding: 10px;
