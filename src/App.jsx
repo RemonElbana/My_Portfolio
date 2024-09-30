@@ -5,6 +5,7 @@ import { useState } from "react";
 import Header from "./Components/Header/Header.jsx";
 import Content from "./Components/Content/Content.jsx";
 import ProjectBtn from "./Components/Projects/ProjectsBtn.jsx";
+import Contact from "./Components/Contact/Contact.jsx";
 
 function App() {
   const [projectSel, setProjectSel] = useState("dashboard");
@@ -62,7 +63,8 @@ function App() {
         </div>
       </section>
     : <section className="projects"> {iscontent} </section>
-}
+      }
+      <Contact/>
     </>
   );
 }
