@@ -14,7 +14,7 @@ function App() {
     setProjectSel(selected);
   }
 
-  const iscontent = "Please Select a Project"
+  // const iscontent = "Please Select a Project"
 
   return (
     <>
@@ -49,7 +49,8 @@ function App() {
           Age Calculator
         </ProjectBtn>
       </div>
-      {projectSel ?       <section className="projects">
+      {/* {projectSel ?        */}
+      <section className="projects">
         <div className="lefts">
           <img src={PROJECTS[projectSel].image} alt="" />
         </div>
@@ -64,11 +65,12 @@ function App() {
           </a>
         </div>
       </section>
-    : <section className="projects"> {iscontent} </section>
-      }
+    {/* // : <section className="projects"> {iscontent} </section>
+    //   } */}
       <Contact/>
     </>
   );
 }
+
 
 export default App;
