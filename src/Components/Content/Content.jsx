@@ -10,15 +10,9 @@ export default function content() {
             <img src={myImg} alt="" />
         </div>
         <div className="right">
-        {/* <h1 className="myName" ><span><span>I</span><span>&apos;</span><span>M</span></span> <span><span>R</span><span>E</span><span>M</span><span>O</span><span>N</span></span> <span><span>E</span><span>L</span><span>B</span><span>A</span><span>N</span><span>A</span></span></h1> */}
-        <main className="container">
-            <p className="specialP" >Hello 👋 I&apos;m</p>
-            <section className="animation">
-                <div className="first"><div>Remon Elbana</div></div>
-                <div className="second"><div>Front-End Developer</div></div>
-                <div className="third"><div>Electrical Engineer</div></div>
-            </section>
-        </main>
+            <div className="typing-slider">
+                <p className="pp" >I&apos;m Remon Elbana</p>
+            </div>            
             <p>
             I am a passionate and dedicated front-end developer with experience in
             web development, video editing, and design using Photoshop. With a

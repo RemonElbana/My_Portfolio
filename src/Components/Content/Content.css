@@ -30,6 +30,9 @@
         }
     }
     .right {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         padding-right: 20px;
         h2 {
         font-size: 37px;
@@ -55,6 +58,69 @@
     }
     }
 
+
+    
+    
+    /* Slider Styles */
+    .typing-slider {
+        font-family: Consolas, monospace;
+        font-weight: bold;
+        white-space: nowrap;
+    }
+    
+    .typing-slider p {
+        position: relative;
+        display: inline;
+        font-size: 30px;
+        text-transform: uppercase;
+        letter-spacing: 0;
+        animation: slide 15s steps(1) infinite; /* 5s * 3 slides */
+    }
+    .pp {
+        font-size: 50px !important;
+        text-shadow: none;
+        padding: 0 !important;
+    }
+
+    .typing-slider p::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: -3px;
+        bottom: 0;
+        border-left: 3px solid black;
+        background: linear-gradient(145deg, #201e22, #1b191da6);
+        animation: typing 10s infinite, cursor 1s infinite;
+    }
+    
+    .typing-slider p:nth-child(1) {
+        animation-delay: 0s;
+    }
+    
+    .typing-slider p:nth-child(1)::after {
+        animation-delay: 0s;
+        animation-timing-function: steps(16, end);
+    }
+
+    @keyframes cursor {
+        from, to {
+        border-color: transparent;
+        }
+        50% {
+        border-color: black;
+        }
+    }
+    
+    @keyframes typing {
+        from {
+        width: 100%;
+        }
+        90%, to {
+        width: 0;
+        }
+    }
+
+
     #homeText {
         font-size: 80px;
     }
@@ -72,28 +138,6 @@
         base-palette: 2;
     }
     
-    span {
-        animation: depth 1s ease-in-out alternate infinite;
-        position: relative;
-        display: inline-block;
-        font-variation-settings: "EDPT" 30;
-        font-palette: --Nabla;
-        @for $i from 1 through 12 {
-            &:nth-child(#{$i}) {
-                animation-delay: $i * 0.1s;
-            }
-        }
-    }
-    
-    @keyframes depth {
-        0% {
-            transform: translatex(0) translatey(0);
-        }
-        100% {
-            font-variation-settings: "EDPT" 200;
-            transform: translatex(0.15em) translatey(0.1em);
-        }
-    }
 
     .button {
     width: 165px;
@@ -123,20 +167,23 @@
     position: absolute;
     left: 0;
     top: 0;
-    }
+}
 
-    .button:hover {
+.button:hover {
     transform: scale(0.9) rotate(3deg);
     background: radial-gradient(
         circle farthest-corner at 10% 20%,
         rgba(255, 94, 247, 1) 17.8%,
         rgba(2, 245, 255, 1) 100.2%
-    );
-    transition: 0.5s;
+        );
+        transition: 0.5s;
     }
 
+    p {
+        text-shadow: 0 0 7px rgba(255,255,255,.3), 0 0 3px rgba(255,255,255,.3);
+    }
 
-    @media (min-width:0px) and (max-width: 650px) {
+    @media (min-width:0px) and (max-width: 399px) {
         article {
             width: 95%;
             flex-direction: column;
@@ -160,6 +207,14 @@
             }
             .right {
                 padding: 10px;
+                p {
+                    font-size: 15px;
+                }
+            }
+            .pp {
+                font-size: 20px !important;
+                text-shadow: none;
+                padding: 0 !important;
             }
         }
 
@@ -196,6 +251,74 @@
         }
     }
     }
+
+    @media (min-width:400px) and (max-width: 650px) {
+        article {
+            width: 95%;
+            flex-direction: column;
+            text-align: center;
+            padding: 10px;
+            margin-top: 10px;
+            margin-bottom: 50px;
+            padding-bottom: 10px;
+            .left {
+                padding-bottom: 0;
+            }
+            p {
+            padding-bottom: 20px;
+            }
+            ul {
+            justify-content: center;
+            gap: 9px !important;
+            li {
+                font-size: 15px;
+            }
+            }
+            .right {
+                padding: 10px;
+            }
+            .pp {
+                font-size: 30px !important;
+                text-shadow: none;
+                padding: 0 !important;
+            }
+        }
+
+        #homeText {
+            font-size: 65px;
+        }
+    
+        .myName {
+            font-size: 50px !important;
+        }
+    
+        .container {
+            color: #e5e5e5;
+            font-size: 2.26rem;
+            text-transform: uppercase;
+            display: flex;
+            align-items: center;
+            justify-content: left;
+            flex-direction: column;
+            div {
+            font-size: 18px; 
+            }
+            .specialP {
+                margin-bottom: 20px;
+            }
+        }
+
+    .extra {
+        display: flex;
+        align-items: center;
+        flex-direction:column;
+        button {
+            margin-top: 0px;
+        }
+    }
+    }
+
+
     @media (min-width:650px) and (max-width: 900px) {
     article {
         width: 95%;
@@ -221,61 +344,3 @@
     }
 
 
-
-    p {
-    text-shadow: 0 0 7px rgba(255,255,255,.3), 0 0 3px rgba(255,255,255,.3);
-    }
-    .container {
-    color: #e5e5e5;
-    font-size: 2.26rem;
-    text-transform: uppercase;
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    }
-
-    .specialP {
-        padding: 0;
-        padding-top: 20px;
-        font-size: 30px !important ;
-    }
-
-    .animation {
-    height:50px;
-    overflow:hidden;
-    margin-left: 1rem;
-    }
-
-    .animation > div > div {
-    padding: 0.25rem 0.75rem;
-    height:2.81rem;
-    margin-bottom: 2.81rem;
-    display:inline-block;
-    }
-
-    .animation div:first-child {
-    animation: text-animation 8s infinite;
-    }
-
-    .first div {
-    background-color:#20a7d8;
-    }
-    .second div {
-    background-color:#CD921E;
-    }
-    .third div {
-    background-color:#5d05c1;
-    }
-
-    @keyframes text-animation {
-    0% {margin-top: 0;}
-    10% {margin-top: 0;}
-    20% {margin-top: -5.62rem;}
-    30% {margin-top: -5.62rem;}
-    40% {margin-top: -11.24rem;}
-    60% {margin-top: -11.24rem;}
-    70% {margin-top: -5.62rem;}
-    80% {margin-top: -5.62rem;}
-    90% {margin-top: 0;}
-    100% {margin-top: 0;}
-    }
