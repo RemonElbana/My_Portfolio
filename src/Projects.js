@@ -9,45 +9,8 @@ import temp3Img from './assets/temp3.png'
 import temp2Img from './assets/temp2.png'
 import temp1Img from './assets/temp1.png'
 import alphacarImg from './assets/carr.png'
+import portImg from './assets/port.png'
 
-export const PROJECTS = {
-
-    // ALLPROJECTS ,
-    // REACTJS,
-    // HTMLCSSJS ,
-    // HTMLCSS ,
-    // CSS ,
-
-    dashboard: {
-        title: "Dashboard" ,
-        description : "This dashboard website offers a clean and intuitive interface for managing and visualizing data. With organized charts, tables, and a user-friendly navigation menu, it’s designed to streamline data tracking and provide quick insights. Perfect for businesses or individuals looking to manage statistics efficiently." ,
-        image : dashImg , 
-        git : "https://github.com/codexXx0/DashBoard" ,
-        demo : "https://codexxx0.github.io/DashBoard/" 
-    }, 
-    crudsystem : {
-        title : "CRUD System" , 
-        description : "This CRUD application allows users to efficiently create, read, update, and delete data entries. With a simple interface, it provides essential data management functions in an easy-to-use format, perfect for basic database operations." ,
-        image : crudImg ,
-        git : "https://github.com/codexXx0/CRUD" ,
-        demo : "https://codexxx0.github.io/CRUD/" 
-    }, 
-    stopwatch : {
-        title : "StopWatch", 
-        description : "The online stopwatch website offers a simple and intuitive tool to track time accurately. It includes essential functions like start, stop, and reset, allowing users to measure time intervals easily. The clean and minimalistic design makes it convenient for tasks that require precise time tracking.",
-        image : stopImg, 
-        git : "https://github.com/codexXx0/StopWatch" ,
-        demo : "https://codexxx0.github.io/StopWatch/" 
-    }, 
-    agecalc : {
-        title : "Age Calculator",
-        description : "The age calculator website provides a quick and easy way to calculate your exact age in years, months, and days. By simply entering your birth date, the tool instantly displays your current age with precision. The user-friendly interface makes it convenient for anyone to use, offering an efficient solution for age calculation needs.",
-        image : ageImg ,
-        git : "https://github.com/codexXx0/CodeAlpha_Project_AgeCalculator" ,
-        demo : "https://codexxx0.github.io/CodeAlpha_Project_AgeCalculator/" 
-    } ,
-    
-}
 
 
 export const ALLPROJECTS = {
@@ -128,10 +91,10 @@ export const ALLPROJECTS = {
         git : "https://github.com/codexXx0/Alpha-Romio" ,
         demo : "https://codexxx0.github.io/Alpha-Romio/" 
     },
-    portfolio : {
+    portfolio: {
         title : "My Portfolio",
         description : "My Portfolio :)",
-        image : alphacarImg ,
+        image : portImg ,
         git : "https://github.com/codexXx0/My_Portfolio" ,
         demo : "https://my-portfolio-new1.vercel.app/" 
     },
@@ -227,8 +190,17 @@ export const REACTJS = {
     portfolio : {
         title : "My Portfolio",
         description : "My Portfolio :)",
-        image : alphacarImg ,
+        image : portImg ,
         git : "https://github.com/codexXx0/My_Portfolio" ,
         demo : "https://my-portfolio-new1.vercel.app/" 
     },
+}
+
+
+export const PROJECTS = {
+    ALLPROJECTS ,
+    REACTJS,
+    HTMLCSSJS ,
+    HTMLCSS ,
+    CSS 
 }
