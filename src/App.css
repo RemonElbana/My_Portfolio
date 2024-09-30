@@ -81,9 +81,15 @@
   }
 }
 
-.ProjectsHeader {
-  margin-top: 80px;
+.ProjectsHeaderDe {
   margin-bottom: 10px;
+  padding-bottom: 30px;
+  display: block;
+}
+
+.ProjectsHeader {
+  margin-bottom: 30px;
+  font-size: 70px;
 }
 
 @media (max-width: 900px) {
@@ -98,6 +104,10 @@
   .buttons {
     text-align: center;
     width: 90%;
+  }
+  .ProjectsHeader {
+    margin-bottom: 30px;
+    font-size: 50px;
   }
   }
 

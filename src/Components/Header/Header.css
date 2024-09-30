@@ -4,6 +4,9 @@ header {
     background: radial-gradient(#2b2730, #222222);
     z-index: 5;
     top: 0;
+    left: 0;
+    padding-inline: 20px;
+    box-sizing: border-box;
     justify-content: space-between;
     align-items: center;
     width: 100%;
@@ -12,7 +15,6 @@ header {
         display: flex;
         gap: 10px;
         padding: 0;
-        padding-right: 50px;
         li {
             padding: 5px 10px;
             background-color: rgb(32, 33, 36);
@@ -34,7 +36,6 @@ header {
 }
 
 #homeSection {
-    margin-top: 100px;
     margin-bottom: 10px;
 }
 

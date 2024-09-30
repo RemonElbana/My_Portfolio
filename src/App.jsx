@@ -18,9 +18,11 @@ function App() {
 
   return (
     <>
+      <div id="homeSection" className="ProjectsHeaderDe" ></div>
       <Header />
       <Content />
-      <h1 id="projectSection" className="ProjectsHeader" >Projects</h1>
+      <div id="projectSection" className="ProjectsHeaderDe" ></div>
+      <h1  className="ProjectsHeader" >Projects</h1>
       <div className="buttons">
         <ProjectBtn
           onSelect={() => selectHandler("dashboard")}
