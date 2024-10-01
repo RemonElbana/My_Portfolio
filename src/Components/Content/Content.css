@@ -283,15 +283,12 @@
                 padding: 0 !important;
             }
         }
-
         #homeText {
             font-size: 65px;
         }
-    
         .myName {
             font-size: 50px !important;
         }
-    
         .container {
             color: #e5e5e5;
             font-size: 2.26rem;
@@ -307,7 +304,6 @@
                 margin-bottom: 20px;
             }
         }
-
     .extra {
         display: flex;
         align-items: center;
