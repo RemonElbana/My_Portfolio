@@ -10,10 +10,18 @@ import temp2Img from './assets/temp2.png'
 import temp1Img from './assets/temp1.png'
 import alphacarImg from './assets/carr.png'
 import portImg from './assets/port.png'
+import novasImg from './assets/NovusHaus.png'
 
 
 
 export const ALLPROJECTS = {
+    novashouse : {
+        title : "NovusHaus",
+        description : "NovusHaus is a modern real estate platform featuring sleek property listings with clear images and essential details. It offers a simple and smooth browsing experience for those looking to explore premium homes.",
+        image : novasImg , 
+        git : "https://github.com/codexXx0/NovusHaus?tab=readme-ov-file" , 
+        demo : "https://codexxx0.github.io/NovusHaus/"
+    },
     dashboard: {
         title: "Dashboard" ,
         description : "This dashboard website offers a clean and intuitive interface for managing and visualizing data. With organized charts, tables, and a user-friendly navigation menu, it’s designed to streamline data tracking and provide quick insights. Perfect for businesses or individuals looking to manage statistics efficiently." ,
@@ -101,6 +109,13 @@ export const ALLPROJECTS = {
 }
 
 export const HTMLCSS = {
+    novashouse : {
+        title : "NovusHaus",
+        description : "NovusHaus is a modern real estate platform featuring sleek property listings with clear images and essential details. It offers a simple and smooth browsing experience for those looking to explore premium homes.",
+        image : novasImg , 
+        git : "https://github.com/codexXx0/NovusHaus?tab=readme-ov-file" , 
+        demo : "https://codexxx0.github.io/NovusHaus/"
+    },
     littlelemon : {
         title : "Little Lemon Restaurant",
         description : "The Little Lemon website provides a visually appealing and user-friendly platform to explore restaurant offerings. Visitors can easily navigate through sections like Menu, Table Reservations, and Opening Hours, making it simple to book a table or browse the latest menu. The clean design and intuitive layout help users quickly find what they need, ensuring a seamless experience for planning their visit or learning more about the restaurant. Perfect for customers looking for convenience and clarity in their dining experience.",

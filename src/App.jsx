@@ -20,6 +20,21 @@ function App() {
     allContent = (
       <section className="projects">
       <div className="AllProjects">
+        <div className="novashouse project ">
+          <div className="lefts">
+            <img src={PROJECTS[projectSel].novashouse.image} alt="" />
+          </div>
+          <div className="text">
+            <h2>{PROJECTS[projectSel].novashouse.title}</h2>
+            <p>{PROJECTS[projectSel].novashouse.description}</p>
+            <a target="_blank" href={PROJECTS[projectSel].novashouse.git}>
+              GitHub Link
+            </a>
+            <a target="_blank" href={PROJECTS[projectSel].novashouse.demo}>
+              Demo Link
+            </a>
+          </div>
+        </div>
         <div className="dashboard project ">
           <div className="lefts">
             <img src={PROJECTS[projectSel].dashboard.image} alt="" />
@@ -348,6 +363,21 @@ function App() {
     allContent = (
       <section className="projects">
         <div className="AllProjects">
+          <div className="novashouse project">
+            <div className="lefts">
+              <img src={PROJECTS[projectSel].novashouse.image} alt="" />
+            </div>
+            <div className="text">
+              <h2>{PROJECTS[projectSel].novashouse.title}</h2>
+              <p>{PROJECTS[projectSel].novashouse.description}</p>
+              <a target="_blank" href={PROJECTS[projectSel].novashouse.git}>
+                GitHub Link
+              </a>
+              <a target="_blank" href={PROJECTS[projectSel].novashouse.demo}>
+                Demo Link
+              </a>
+            </div>
+          </div>
           <div className="littlelemon project">
             <div className="lefts">
               <img src={PROJECTS[projectSel].littlelemon.image} alt="" />
