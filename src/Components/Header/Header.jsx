@@ -11,8 +11,8 @@ export default function header() {
                 <ul>
                     <li><a href="#homeSection">Home</a></li>
                     <li><a href="#projectSection">Projects</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Education</a></li>
+                    <li><a href="#contactSection">Contact</a></li>
                 </ul>
             </div>
         </header>

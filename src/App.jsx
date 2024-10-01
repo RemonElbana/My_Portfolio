@@ -7,13 +7,14 @@ import ProjectBtn from "./Components/Projects/ProjectsBtn.jsx";
 import Contact from "./Components/Contact/Contact.jsx";
 
 function App() {
-  const [projectSel, setProjectSel] = useState("ALLPROJECTS");
+  const [projectSel, setProjectSel] = useState();
 
   function selectHandler(selected) {
     setProjectSel(selected);
   }
 
   let allContent = ""
+
 
   if ( projectSel === "ALLPROJECTS") {
     allContent = (
@@ -409,6 +410,12 @@ function App() {
           </div>
         </div>
     </section>  
+    )
+  } else {
+    allContent = (
+      <section className="projects" >
+              <p>Which Projects List Do you Wanna Explore ?</p>
+      </section>
     )
   }
 

@@ -119,11 +119,11 @@
 
 @media (max-width:1400px ) {
   .projects {
-    width: 95%;
+    width: 75%;
     flex-direction: column;
     text-align: center;
     padding-bottom: 30px;
-    margin-bottom: 50px;
+    margin-bottom: 130px;
     p {
     padding-bottom: 10px;
     }
