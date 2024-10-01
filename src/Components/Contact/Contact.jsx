@@ -2,8 +2,8 @@ import './Contact.css'
 export default function contact() {
     return (
         <>
-      <div id="contactSection" className="ProjectsHeaderDe" ></div>
-      <h1 id="" >Contact Me</h1>
+        <div id="contactSection" className="ProjectsHeaderDe" ></div>
+        <h1 id="" >Contact Me</h1>
         <article className='contactArticle' >
         <h1>You Can Find Me Here :)</h1>
             {/*
