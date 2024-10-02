@@ -20,6 +20,36 @@ function App() {
     allContent = (
       <section className="projects">
       <div className="AllProjects">
+      <div className="invCalc project">
+          <div className="lefts">
+            <img src={PROJECTS[projectSel].invCalc.image} alt="" />
+          </div>
+          <div className="text">
+            <h2>{PROJECTS[projectSel].invCalc.title}</h2>
+            <p>{PROJECTS[projectSel].invCalc.description}</p>
+            <a target="_blank" href={PROJECTS[projectSel].invCalc.git}>
+              GitHub Link
+            </a>
+            <a target="_blank" href={PROJECTS[projectSel].invCalc.demo}>
+              Demo Link
+            </a>
+          </div>
+        </div>
+        <div className="ticTacToe project">
+          <div className="lefts">
+            <img src={PROJECTS[projectSel].ticTacToe.image} alt="" />
+          </div>
+          <div className="text">
+            <h2>{PROJECTS[projectSel].ticTacToe.title}</h2>
+            <p>{PROJECTS[projectSel].ticTacToe.description}</p>
+            <a target="_blank" href={PROJECTS[projectSel].ticTacToe.git}>
+              GitHub Link
+            </a>
+            <a target="_blank" href={PROJECTS[projectSel].ticTacToe.demo}>
+              Demo Link
+            </a>
+          </div>
+        </div>
         <div className="novashouse project ">
           <div className="lefts">
             <img src={PROJECTS[projectSel].novashouse.image} alt="" />
@@ -222,6 +252,36 @@ function App() {
     allContent = (
       <section className="projects">
       <div className="AllProjects">
+        <div className="invCalc project">
+          <div className="lefts">
+            <img src={PROJECTS[projectSel].invCalc.image} alt="" />
+          </div>
+          <div className="text">
+            <h2>{PROJECTS[projectSel].invCalc.title}</h2>
+            <p>{PROJECTS[projectSel].invCalc.description}</p>
+            <a target="_blank" href={PROJECTS[projectSel].invCalc.git}>
+              GitHub Link
+            </a>
+            <a target="_blank" href={PROJECTS[projectSel].invCalc.demo}>
+              Demo Link
+            </a>
+          </div>
+        </div>
+        <div className="ticTacToe project">
+          <div className="lefts">
+            <img src={PROJECTS[projectSel].ticTacToe.image} alt="" />
+          </div>
+          <div className="text">
+            <h2>{PROJECTS[projectSel].ticTacToe.title}</h2>
+            <p>{PROJECTS[projectSel].ticTacToe.description}</p>
+            <a target="_blank" href={PROJECTS[projectSel].ticTacToe.git}>
+              GitHub Link
+            </a>
+            <a target="_blank" href={PROJECTS[projectSel].ticTacToe.demo}>
+              Demo Link
+            </a>
+          </div>
+        </div>
         <div className="portfolio project">
           <div className="lefts">
             <img src={PROJECTS[projectSel].portfolio.image} alt="" />

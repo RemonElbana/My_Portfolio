@@ -11,10 +11,25 @@ import temp1Img from './assets/temp1.png'
 import alphacarImg from './assets/carr.png'
 import portImg from './assets/port.png'
 import novasImg from './assets/NovusHaus.png'
-
+import ticImg from './assets/tic.png'
+import invImg from './assets/inv.png'
 
 
 export const ALLPROJECTS = {
+    invCalc : {
+        title : "Investment Calculator" ,
+        description : "Created an interactive investment calculator to estimate returns based on variables like initial investment, interest rate, and time period. It calculates both compound and simple interest, offering real-time results and full responsiveness. Designed for easy financial planning and decision-making." , 
+        image : invImg ,
+        git : 'https://github.com/codexXx0/Investment-Calculator', 
+        demo : 'https://investment-calculator-six-psi.vercel.app/'
+    },
+    ticTacToe : {
+        title : "Tic-Tac-Toe" ,
+        description : "Built an investment calculator to estimate returns using inputs like initial investment, interest rate, and time. It calculates simple and compound interest, providing real-time, responsive results for easy financial planning." , 
+        image : ticImg ,
+        git : 'https://github.com/codexXx0/tic-tac-toe?tab=readme-ov-file', 
+        demo : 'https://tic-tac-toe-sepia-omega.vercel.app/'
+    },
     novashouse : {
         title : "NovusHaus",
         description : "NovusHaus is a modern real estate platform featuring sleek property listings with clear images and essential details. It offers a simple and smooth browsing experience for those looking to explore premium homes.",
@@ -202,6 +217,20 @@ export const CSS = {
 }
 
 export const REACTJS = {
+    invCalc : {
+        title : "Investment Calculator" ,
+        description : "Created an interactive investment calculator to estimate returns based on variables like initial investment, interest rate, and time period. It calculates both compound and simple interest, offering real-time results and full responsiveness. Designed for easy financial planning and decision-making." , 
+        image : invImg ,
+        git : 'https://github.com/codexXx0/Investment-Calculator', 
+        demo : 'https://investment-calculator-six-psi.vercel.app/'
+    },
+    ticTacToe : {
+        title : "Tic-Tac-Toe" ,
+        description : "Built an investment calculator to estimate returns using inputs like initial investment, interest rate, and time. It calculates simple and compound interest, providing real-time, responsive results for easy financial planning." , 
+        image : ticImg ,
+        git : 'https://github.com/codexXx0/tic-tac-toe?tab=readme-ov-file', 
+        demo : 'https://tic-tac-toe-sepia-omega.vercel.app/'
+    },
     portfolio : {
         title : "My Portfolio",
         description : "My Portfolio :)",
