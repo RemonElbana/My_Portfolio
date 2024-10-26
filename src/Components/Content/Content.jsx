@@ -14,14 +14,14 @@ export default function content() {
                 <p className="pp" >I&apos;m Remon Elbana</p>
             </div>            
             <p>
-            I am a passionate and dedicated front-end developer with experience in
-            web development, video editing, and design using Photoshop. With a
-            solid background in electrical engineering, I possess strong technical
-            skills in both hardware and software. I am also a basketball player,
-            painter, and active volunteer at the Resala Charity Organization.
+                Passionate and skilled Front-End Developer with
+                a background in Electrical Engineering. Experienced in creating responsive, 
+                user-centered applications using HTML, CSS, and JavaScript, with expertise in React.js. 
+                Committed to building efficient, innovative solutions with a keen eye for design and usability. 
+                Eager to contribute to impactful projects in a dynamic tech environment. 
             </p>
             <div className="extra">
-            <a target="_blank" href="https://drive.google.com/file/d/1n4WlhfwmdX1ERMoGSMT8U212XyzWpOUg/view?usp=sharing"><button className="button" >My Resume</button></a>
+            <a target="_blank" href="https://drive.google.com/file/d/1qg8rtqj1gTqoNYVzsjL4EVz0mS9q6Jgl/view?usp=sharing"><button className="button" >My Resume</button></a>
             </div>
         </div>
         </article>
