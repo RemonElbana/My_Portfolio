@@ -6,26 +6,6 @@ export default function contact() {
         <h1 id="" >Contact Me</h1>
         <article className='contactArticle' >
         <h1>You Can Find Me Here :)</h1>
-            {/*
-            <ul>
-                <li>
-                <a target="_blank" href="https://www.linkedin.com/in/remonvictor/">
-                    LinkedIn
-                </a>
-                </li>
-                <li>
-                <a target="_blank" href="https://github.com/codexXx0">
-                    GitHub
-                </a>
-                </li>
-                <li>
-                <a target="_blank" href="https://wa.link/irpx87">
-                    WhatsApp
-                </a>
-                </li>
-                <li>
-                </li>
-            </ul> */}
             <div className="main">
             <div className="left">
                 <h2 className='first' >By Phone </h2>

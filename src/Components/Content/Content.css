@@ -38,8 +38,12 @@
         font-size: 37px;
         }
         p {
-            padding-bottom: 15px;
+            padding-bottom: 5px;
             font-size: 19px;
+        }
+        .rated {
+            width: 22%;
+            padding-bottom: 15px;
         }
         ul {
         list-style: none;
@@ -199,17 +203,20 @@
             padding-bottom: 20px;
             }
             ul {
-            justify-content: center;
-            gap: 9px !important;
-            li {
+                justify-content: center;
+                gap: 9px !important;
+                li {
+                    font-size: 15px;
+            }
+        }
+        .right {
+            padding: 10px;
+            p {
                 font-size: 15px;
             }
+            .rated  {
+                margin-inline: auto;
             }
-            .right {
-                padding: 10px;
-                p {
-                    font-size: 15px;
-                }
             }
             .pp {
                 font-size: 20px !important;
@@ -276,6 +283,9 @@
             }
             .right {
                 padding: 10px;
+                .rated  {
+                    margin-inline: auto;
+                }    
             }
             .pp {
                 font-size: 30px !important;
@@ -326,6 +336,11 @@
         }
         ul {
         justify-content: center;
+        }
+        .right {
+            .rated  {
+                margin-inline: auto;
+            }
         }
     }
     .extra {

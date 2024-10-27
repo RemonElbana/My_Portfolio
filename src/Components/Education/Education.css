@@ -1,0 +1,198 @@
+#education {
+    h1 {
+        margin-bottom: 50px;
+        padding-top: 30px;
+    }
+    article {
+        background-color: transparent !important;
+        background: none;
+        box-shadow: none;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        .box {
+            display: flex;
+            justify-content: center;
+            column-gap: 30px;
+            margin-inline: auto;
+            width: 65%;
+            margin-bottom: 130px;
+            .left {
+                flex-basis: 50%;
+                background-color: #1d1b1fbb;
+                border-radius: 15px;
+                min-width: 280px;
+                box-shadow:
+                12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+                100px 100px 80px rgba(0, 0, 0, 0.07);
+                text-align: center;
+                box-sizing: border-box;
+            }
+            .right {
+                flex-basis: 50%;
+                box-sizing: border-box;
+                min-width: 250px;
+                h2 {
+                    background-color: #e3b247;
+                    padding: 10px 15px;    
+                    width: fit-content;
+                    border-radius: 10px;
+                    position: relative;
+                    &::after {
+                        position: absolute;
+                        content: "";
+                        width: 1px;
+                        height: 1px;
+                        border: 15px solid #e3b24700;
+                        left: -28px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        border-right-color: #e3b247;
+                    }
+                }
+            }
+        }
+        &::before {
+            position: absolute;
+            content: "";
+            width: 10px;
+            height: 90%;
+            top: 50%;
+            z-index: 2;
+            left: 50%;
+            transform: translateY(-50%);
+            background-color: #e3b247;
+            border-radius: 3px;
+        }
+    }
+}
+
+.first {
+    .left {
+        animation: scrollMoveFromLeft linear;
+        animation-timeline: view();
+        animation-range: entry  ;
+    }
+    .right {
+        padding-left: 30px;
+        padding-right: 0;
+    }
+}
+.second {
+    .left {
+        animation: scrollMoveFromRight linear;
+        animation-timeline: view();
+        animation-range: entry  ;
+    }
+    .right {
+        text-align: right;
+        h2 {
+            margin-left: auto;
+            &::after {
+                position: absolute;
+                content: "";
+                width: 1px;
+                height: 1px;
+                border: 15px solid #e3b24700;
+                left: 113px !important;
+                top: 50%;
+                transform: translateY(-50%);
+                border-left-color: #e3b247 !important;
+                border-right-color: #e3b24700 !important;
+                
+            }
+}
+    }
+}
+.third {
+    margin-bottom: 0;
+    .left {
+        animation: scrollMoveFromLeft linear;
+        animation-timeline: view();
+        animation-range: entry  ;
+    }
+    .right {
+        padding-left: 30px;
+        padding-right: 0;
+    }
+}
+
+
+
+@keyframes scrollMoveFromRight {
+    from {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes scrollMoveFromLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+@media (max-width:600px) {
+    #education  {
+        article {
+            margin: 0;
+            padding: 0;
+            .box {
+                width: 100% !important;
+                .left {
+                    min-width: 0 !important;
+                }
+                .right {
+                    min-width: 0 !important; 
+                }
+            }
+        }
+    }
+}
+@media (max-width:450px) {
+    #education  {
+        article {
+            margin: 0;
+            padding: 0;
+            .box {
+                width: 100% !important;
+                .left {
+                    min-width: 0 !important;
+                    h2 {
+                        font-size: 16px;
+                    }
+                    h3 {
+                        font-size: 14px;
+                        font-weight: normal;
+                    }
+                    p {
+                        font-size: 11px;
+                        font-weight: lighter;
+                    }
+                }
+                .right {
+                    min-width: 0 !important; 
+                    h2 {
+                        font-size: 25px;
+                    }
+                }
+            }
+        }
+    }
+    .second {
+        .right {
+            h2 {
+                &::after {
+                    left: 85px !important;
+                }
+            }
+        }
+    }
+}
