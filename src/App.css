@@ -48,16 +48,16 @@
   padding: 20px;
   padding-bottom: 20px;
   max-width: 100%;
-  background-color: #1e1c20;
+  /* background-color: #1e1c20; */
   width: 75%;
   display: flex;
   text-align: left;
   margin-inline: auto;
   position: relative;
   border-radius: 15px;
-  background: linear-gradient(145deg, #201e22, #1b191d);
+  background: linear-gradient(145deg, #201e22c5, #1b191de7);
   box-shadow:  33px 33px 70px #171518,
-              -33px -33px 70px #252328;    
+              -33px -33px 70px #252328c7;    
   .project {
     display: flex;
     padding-bottom: 30px;
@@ -108,29 +108,66 @@
 
 
 .rocket {
-  width: 00%;
+  width: 20%;
   height: 25%;
-  transform: translate3d(0px, 0px, 0px);
   content-visibility: visible;
   position: fixed;
   left: 0px;
-  top: 700px;
-  z-index: 10;
-  transform: rotate(0deg);
-  animation: rocket linear;
+  bottom: 50px;
+  z-index: 0;
+  animation:  fly  linear ;
   animation-timeline: scroll();
 }
 
-/* @keyframes rocket {
+@keyframes fly {
   0% {
+    left: 0; 
+    bottom: 0;
     transform: rotate(0deg);
-    top: 0;
   }
-  50% {
+  12.5% {
+    left: 25%; 
+    bottom: 50%;  /* Rocket rises to the mid-arc */
+    transform: rotate(45deg);
+  }
+  25% {
+    left: 50%; 
+    bottom: 90%; /* Rocket reaches the top of the arc */
     transform: rotate(90deg);
-    top: 100%;
   }
-} */
+  37.5% {
+    left: 75%; 
+    bottom: 50%; /* Rocket descends */
+    transform: rotate(135deg);
+  }
+  50%  {
+    left: 83%; 
+    bottom: 400px; /* Rocket lands at the end */
+    transform: rotate(180deg);
+  }
+  62.5% {
+    left: 75%;
+    bottom: 300px;
+    transform: rotate(225deg);
+  }
+  75% {
+    left: 50%;
+    bottom: 200px;
+    transform: rotate(270deg);
+  }
+  87.5% {
+    left: 25%;
+    bottom: 100px;
+    transform: rotate(315deg);
+  }
+  100% {
+    left: 0%;
+    bottom: 50px;
+    transform: rotate(360deg);
+  }
+}
+
+
 
 @media (max-width: 900px) {
   #root {

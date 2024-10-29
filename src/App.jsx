@@ -1,6 +1,6 @@
 import "./App.css";
 import Lottie  from "lottie-react";
-import rocketAnimation from './assets/rocket.json' ;
+import rocketAnimation from './assets/rocket5.json' ;
 import starAnimation from './assets/stars.json'
 import Header from "./Components/Header/Header.jsx";
 import Content from "./Components/Content/Content.jsx";
