@@ -539,6 +539,12 @@ export default function Projects() {
             >
             CSS
             </ProjectBtn>
+            <ProjectBtn
+            onSelect={() => selectHandler("close")}
+            isSelected={projectSel === "close"}
+            >
+            X
+            </ProjectBtn>
         </div>
         {allContent}        
     </>
