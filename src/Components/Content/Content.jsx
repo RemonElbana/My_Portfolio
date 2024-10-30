@@ -2,6 +2,11 @@ import "./Content.css";
 import Lottie from "lottie-react";
 import ratedAnimation from '../../assets/rated.json'
 import myImg from "../../assets/avatar.jpg";
+import linkedImg from '../../assets/icons8-linkedin.svg'
+import githubImg from '../../assets/github.svg'
+import downImg from '../../assets/icons8-download-48.png'
+
+
 
 export default function content() {
     return (
@@ -23,8 +28,13 @@ export default function content() {
                         Eager to contribute to impactful projects in a dynamic tech environment. 
                     </p>
                     <Lottie animationData={ratedAnimation}  className="rated"/>
+                    <div>
+                        <a href="https://www.linkedin.com/in/remonvictor/" target="_blank" ><img src={linkedImg} alt="" /></a>
+                        <a href="https://github.com/RemonElbana" target="_blank"><img src={githubImg} alt="" /></a>
+                    </div>
                     <div className="extra">
-                    <a target="_blank" href="https://drive.google.com/file/d/1qg8rtqj1gTqoNYVzsjL4EVz0mS9q6Jgl/view?usp=sharing"><button className="button" >My Resume</button></a>
+                        <a target="_blank" href="https://drive.google.com/file/d/1qg8rtqj1gTqoNYVzsjL4EVz0mS9q6Jgl/view?usp=sharing"><button className="button" >My Resume</button></a>
+                        <a href="https://drive.usercontent.google.com/u/0/uc?id=1qg8rtqj1gTqoNYVzsjL4EVz0mS9q6Jgl&export=download" ><img src={downImg} id="downImg" alt="" /></a>
                     </div>
                 </div>
             </article>

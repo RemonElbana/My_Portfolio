@@ -42,7 +42,7 @@
             font-size: 19px;
         }
         .rated {
-            width: 22%;
+            width: 24%;
             padding-bottom: 15px;
         }
         ul {
@@ -51,12 +51,25 @@
         gap: 15px;
         padding: 0;
         }
+        img {
+            width: 40px;
+            height: 40px;
+            display: inline-block;
+            margin-right:10px ;
+            cursor: pointer;
+        }
         .extra {
             position: relative;
             z-index: 1;
+            display: flex;
+            align-items: center;
             button {
                 margin-top: 10px;
                 margin-bottom: 10px;
+            }
+            #downImg {
+                margin-left: 20px;
+                margin-right: 20px;
             }
         }
     }
@@ -252,6 +265,7 @@
     .extra {
         display: flex;
         align-items: center;
+        justify-content: center;
         flex-direction:column;
         button {
             margin-top: 0px;
@@ -318,6 +332,7 @@
         display: flex;
         align-items: center;
         flex-direction:column;
+        justify-content: center;
         button {
             margin-top: 0px;
         }
@@ -346,8 +361,7 @@
     .extra {
         display: flex;
         align-items: center;
-        flex-direction: row-reverse;
-        justify-content: space-around;
+        justify-content: center;
         button {
             margin-top: 0px;
         }
