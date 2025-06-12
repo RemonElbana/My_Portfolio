@@ -3,7 +3,7 @@ import { PROJECTS } from "../../Projects";
 import ProjectBtn from './ProjectsBtn.jsx'
 
 export default function Projects() {
-    const [projectSel, setProjectSel] = useState();
+    const [projectSel, setProjectSel] = useState("ALLPROJECTS");
 
     function selectHandler(selected) {
     setProjectSel(selected);
