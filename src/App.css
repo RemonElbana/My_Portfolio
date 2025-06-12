@@ -21,7 +21,7 @@
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0px;
     background-color: transparent;
-    color: #646cff;
+    color: #e1b228;
     font-family: "Roboto Condensed", sans-serif;
     font-size: 1.0rem;
     cursor: pointer;
@@ -29,11 +29,11 @@
   }
   button:hover {
     background-color: #201E22;
-    color: #ebe7ef;
+    color: #bf961a;
   }
   button.active {
     background-color: #201E22;
-    color: #ebe7ef;
+    color: #bf961a;
   }
 }
 
