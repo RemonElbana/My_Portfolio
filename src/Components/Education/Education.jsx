@@ -37,8 +37,18 @@ export default function Education() {
                         <h2>2024</h2>
                     </div>
                 </section>
+                <section className=" box forth">
+                    <div className="right">
+                        <h2>2025</h2>
+                    </div>
+                    <div className="left">
+                        <h2>National Telecommunication Institute (NTI)</h2>
+                        <h3>MERN Stack</h3>
+                        <p> Nov 2024 - Jan 2025</p>
+                    </div>
+                </section>
             </article>
-        </div>
+        </div>  
         </>
     )
 }
