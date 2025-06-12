@@ -33,8 +33,8 @@ export default function content() {
                         <a href="https://github.com/RemonElbana" target="_blank"><img src={githubImg} alt="" /></a>
                     </div>
                     <div className="extra">
-                        <a target="_blank" href="https://drive.google.com/file/d/1bvBw0ZMHt28WKgwwl43fp-IiujaEE3VK/view?usp=sharing"><button className="button" >My Resume</button></a>
-                        <a href="https://drive.usercontent.google.com/u/0/uc?id=1bvBw0ZMHt28WKgwwl43fp-IiujaEE3VK&export=download" download="Remon'cv.pdf">
+                        <a target="_blank" href="https://drive.google.com/file/d/10Lu9m4M65YyZhH-lnLWV_WRQnyEDkqez/view?usp=sharing"><button className="button" >My Resume</button></a>
+                        <a href="https://drive.usercontent.google.com/download?id=10Lu9m4M65YyZhH-lnLWV_WRQnyEDkqez&export=download" download="Remon'cv.pdf">
                             <img src={downImg} id="downImg" alt="Download Resume" />
                         </a>                    
                     </div>
